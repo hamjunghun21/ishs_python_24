@@ -7,6 +7,7 @@ else:
     for i in range(2, number):
         if number % i == 0:
             cnt += 1
+            break #The loop ends when the first divisor is found.
 
 if cnt == 0:
     print(f"{number} is prime number")
