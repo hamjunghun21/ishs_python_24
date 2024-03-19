@@ -5,7 +5,7 @@ if number < 2:
     is_prime_number = False
 else:
     i = 2
-    while i*i <= number: # reduce loop operation
+    while i*i <= number: # bug fix
         if number % i == 0:
             is_prime_number = False # Calculate with boolean operator instead of addition operation
             break # The loop ends when the first divisor is found.
