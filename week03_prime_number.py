@@ -1,7 +1,4 @@
-test = input().split()
-print(test)
-
-start, end = map(int, input("start number and end number: ").split())
+start, end = list(map(int, input("start number and end number: ").split()))
 
 for k in range(start, end+1):
     is_prime_number = True # Change variable name from cnt to is_prime_number for readability.
