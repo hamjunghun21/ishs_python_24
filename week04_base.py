@@ -1,3 +1,5 @@
+print(31.97e-3)
+
 char = input()
 print(ord(char))
 
