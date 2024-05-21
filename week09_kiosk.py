@@ -25,9 +25,7 @@ total_price = 0
 
 menu_lists = ""
 
-l = []
-for j in beverage_price_quantity.keys():
-    l.append(j)
+l = [j for j in beverage_price_quantity.keys()]
 
 for i in range(len(beverage_price_quantity)):
     menu_lists = menu_lists +f"{i+1}) {l[i]} {beverage_price_quantity[l[i]][0]}won  "
