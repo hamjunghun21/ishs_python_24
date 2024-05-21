@@ -17,17 +17,20 @@ def select_menu(index):
 #beverage_price = {"americano coffee": 1500, "caffe latte": 2500, "iced tea": 2300}
 #quantity = [0, 0, 0]
 
-beverage_price = {"americano coffee": [1500, 0],
+beverage_price_quantity = {"americano coffee": [1500, 0],
                   "caffe latte": [2500, 0],
                   "iced tea": [2300, 0]}
 
 total_price = 0
+
 menu_lists = ""
 
-for m in range(len(beverage)):
-    menu_lists = menu_lists + f"{m+1} {beverage[m]} {prices[m]}won  "
+i = 1
+for k, v in beverage_price_quantity.items():
+    menu_lists = menu_lists + f"{i}) {k} {v[0]}won  "
+    i = i + 1
 
-menu_lists = menu_lists + f"{len(beverage)+1} End order : "
+menu_lists = menu_lists + f"{i} End order : "
 
 while True:
     menu = input(menu_lists)
