@@ -25,12 +25,19 @@ total_price = 0
 
 menu_lists = ""
 
-i = 1
-for k, v in beverage_price_quantity.items():
-    menu_lists = menu_lists + f"{i}) {k} {v[0]}won  "
-    i = i + 1
+l = []
+for j in beverage_price_quantity.keys():
+    l.append(j)
 
-menu_lists = menu_lists + f"{i} End order : "
+for i in range(len(beverage_price_quantity)):
+    menu_lists = menu_lists +f"{i+1}) {l[i]} {beverage_price_quantity[l[i]][0]}won  "
+
+#i = 1
+#for k, v in beverage_price_quantity.items():
+    #menu_lists = menu_lists + f"{i}) {k} {v[0]}won  "
+    #i = i + 1
+
+menu_lists = menu_lists + f"{len(l)+1} End order : "
 
 while True:
     menu = input(menu_lists)
