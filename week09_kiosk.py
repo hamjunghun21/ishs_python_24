@@ -14,8 +14,13 @@ def select_menu(index):
 #beverage = ["americano coffee", "latte", "iced tea"]
 #prices = [1500, 2500, 2300]
 
-beverage_price = {"americano coffee": 1500, "caffe latte": 2500, "iced tea": 2300}
-quantity = [0, 0, 0]
+#beverage_price = {"americano coffee": 1500, "caffe latte": 2500, "iced tea": 2300}
+#quantity = [0, 0, 0]
+
+beverage_price = {"americano coffee": [1500, 0],
+                  "caffe latte": [2500, 0],
+                  "iced tea": [2300, 0]}
+
 total_price = 0
 menu_lists = ""
 
