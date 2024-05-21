@@ -46,8 +46,13 @@ while True:
     else:
         print(f"The menu number {menu} you ordered does not exit. Please choose from the menu.")
 
-for i in range(len(beverage)):
-    if quantity[i] != 0:
-        print(f"{beverage[i]}\n\t{prices[i]} x{quantity[i]}\t{prices[i]*quantity[i]}")
+
+for k,v in beverage_price_quantity.items():
+    if v[1] != 0:
+        print(f"{k}\n\t{v[0]} x{v[1]}\t{v[0]*v[1]}")
+
+#for i in range(len(beverage)):
+   # if quantity[i] != 0:
+       # print(f"{beverage[i]}\n\t{prices[i]} x{quantity[i]}\t{prices[i]*quantity[i]}")
 
 print(f"The total amount is {total_price} won.")
