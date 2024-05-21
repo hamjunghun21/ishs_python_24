@@ -49,7 +49,7 @@ while True:
 
 for k,v in beverage_price_quantity.items():
     if v[1] != 0:
-        print(f"{k}\n\t{v[0]} x{v[1]}\t{v[0]*v[1]}")
+        print(f"{k}\n\t{v[0]}\t x{v[1]}\t{v[0]*v[1]}")
 
 #for i in range(len(beverage)):
    # if quantity[i] != 0:
